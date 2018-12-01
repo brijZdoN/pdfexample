@@ -3,6 +3,7 @@ package com.example.brijj.pdfexample;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,11 +39,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>
          model=arrayList.get(position);
         holder.fname.setText(model.getFilename());
         holder.filepath.setText(model.getUri());
-       holder.fname.setOnClickListener(new View.OnClickListener() {
+       holder.card.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
                Intent intent = new Intent(Intent.ACTION_VIEW);
-               intent.setData(Uri.parse(model.getUri()));
+               intent.setDataAndType(Uri.parse(model.getUri()),"application/pdf");
+               intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                context.startActivity(intent);
            }
        });
@@ -56,12 +58,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder
-    {
+    {   CardView card;
         TextView fname,filepath;
         public MyViewHolder(View itemView) {
             super(itemView);
             fname=itemView.findViewById(R.id.f);
             filepath=itemView.findViewById(R.id.path);
+            card=itemView.findViewById(R.id.card);
         }
     }
 }
