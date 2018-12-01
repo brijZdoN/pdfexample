@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "152795094999",
+    "firebase_url": "https://pdfexample-a916a.firebaseio.com",
+    "project_id": "pdfexample-a916a",
+    "storage_bucket": "pdfexample-a916a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152795094999:android:bad50fc178fcb3cd",
+        "android_client_info": {
+          "package_name": "com.example.brijj.pdfexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152795094999-depttnd8e4c8eqj5dkvbn4oas8n1s51r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.brijj.pdfexample",
+            "certificate_hash": "f5380ba6fbc0809b1a5b913bf6c0ec6f97d1d6da"
+          }
+        },
+        {
+          "client_id": "152795094999-7u9lpqjl7gku3do63490fqaufrukss4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsQDCQGbyeyp3JT5LUiNOcYWQrAr3MQ-M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152795094999-7u9lpqjl7gku3do63490fqaufrukss4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
